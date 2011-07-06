@@ -58,7 +58,7 @@ module OmniAuth
     autoload :Teambox,            'omniauth/strategies/oauth2/teambox'
     autoload :ThirtySevenSignals, 'omniauth/strategies/oauth2/thirty_seven_signals'
     autoload :Vkontakte,          'omniauth/strategies/oauth2/vkontakte'
-    autoload :WePay,              'omniauth/strategies/oauth2/we_pay'
+    autoload :WePay,              'omniauth/strategies/oauth2/wepay'
 
     autoload :XAuth,              'omniauth/strategies/xauth'
   end
