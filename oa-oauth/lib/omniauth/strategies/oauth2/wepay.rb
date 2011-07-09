@@ -34,7 +34,13 @@ module OmniAuth
       end
 
       def request_phase
-        options[:scope] ||= "manage_accounts,view_balance,collect_payments,refund_payments,view_user"
+        @options[:scope] ||= "manage_accounts,view_balance,collect_payments,refund_payments,view_user"
+        super
+      end
+      
+      def callback_phase
+        # Clear out options. WePay token call will fail if unknown keys are passed to it.
+        @options = {}
         super
       end
 

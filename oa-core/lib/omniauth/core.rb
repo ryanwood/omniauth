@@ -98,7 +98,8 @@ module OmniAuth
       'smugmug' => 'SmugMug',
       'cas' => 'CAS',
       'trademe' => 'TradeMe',
-      'ldap'  => 'LDAP'
+      'ldap'  => 'LDAP',
+      'wepay' => 'WePay'
     }
 
     module_function
